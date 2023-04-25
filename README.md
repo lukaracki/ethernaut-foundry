@@ -19,7 +19,13 @@ The solutions in this repository were inspired and adapted from the following re
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/ethernaut-solutions-with-foundry.git
+git clone https://github.com/lukaracki/ethernaut-foundry
+```
+
+2. Change to the repository directory:
+
+```bash
+cd ethernaut-foundry
 ```
 
 2. Change to the repository directory:
