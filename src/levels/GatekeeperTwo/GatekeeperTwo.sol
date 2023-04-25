@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract GatekeeperOne {
+contract GatekeeperTwo {
     address public entrant;
 
     modifier gateOne() {
@@ -10,14 +10,16 @@ contract GatekeeperOne {
     }
 
     modifier gateTwo() {
-        require(gasleft() % 8191 == 0);
+        uint256 x;
+        assembly {
+            x := extcodesize(caller())
+        }
+        require(x == 0);
         _;
     }
 
     modifier gateThree(bytes8 _gateKey) {
-        require(uint32(uint64(_gateKey)) == uint16(uint64(_gateKey)), "GatekeeperOne: invalid gateThree part one");
-        require(uint32(uint64(_gateKey)) != uint64(_gateKey), "GatekeeperOne: invalid gateThree part two");
-        require(uint32(uint64(_gateKey)) == uint16(uint160(tx.origin)), "GatekeeperOne: invalid gateThree part three");
+        require(uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ uint64(_gateKey) == type(uint64).max);
         _;
     }
 
