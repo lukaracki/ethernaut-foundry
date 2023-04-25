@@ -36,13 +36,7 @@ forge install
 
 ## Running the Tests
 
-1. Start a local Ethereum node using Foundry:
-
-```bash
-anvil
-```
-
-2. In a separate terminal, run the tests:
+1. In a separate terminal, run the tests:
 
 ```bash
 forge test
