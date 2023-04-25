@@ -28,10 +28,10 @@ git clone https://github.com/lukaracki/ethernaut-foundry
 cd ethernaut-foundry
 ```
 
-2. Change to the repository directory:
+3. Install forge dependencies
 
 ```bash
-cd ethernaut-foundry
+forge install
 ```
 
 ## Running the Tests
