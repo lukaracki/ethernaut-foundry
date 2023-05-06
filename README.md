@@ -1,6 +1,6 @@
 # Ethernaut Solutions with Foundry
 
-This repository contains solutions for levels 13-28 of the [Ethernaut](https://ethernaut.openzeppelin.com/) smart contract challenges using the [Foundry](https://github.com/gakonst/foundry) development framework. Ethernaut is a collection of smart contract security challenges designed to help developers improve their understanding of smart contracts and their security.
+This repository contains solutions for levels 13-29 of the [Ethernaut](https://ethernaut.openzeppelin.com/) smart contract challenges using the [Foundry](https://github.com/gakonst/foundry) development framework. Ethernaut is a collection of smart contract security challenges designed to help developers improve their understanding of smart contracts and their security.
 
 ## Credits
 
